@@ -1,0 +1,16 @@
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  background: $main-black;
+  font-family: Arial, sans-serif;
+}
+
+#app {
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: $white;
+  }
+}

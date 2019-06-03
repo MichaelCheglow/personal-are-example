@@ -1,0 +1,134 @@
+.form-credit-card {
+  position: relative;
+
+  &__front {
+    width: 350px;
+    margin-bottom: 20px;
+    border-radius: 10.1px;
+    padding: 15px;
+    position: relative;
+    z-index: 2;
+    border: solid 1px $light-grey;
+    background: $lighter-grey;
+  }
+
+  &__card-number {
+    margin-bottom: 15px;
+  }
+
+  &__card-number-inputs {
+    display: flex;
+    // justify-content: space-between;
+
+    input {
+      width: 65px;
+      box-sizing: border-box;
+      border: 1px solid $light-grey;
+      background: $white;
+      line-height: 40px;
+      padding: 0 10px;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__error {
+    color: $error;
+    margin: 5px 0;
+    font-size: 12px;
+  }
+
+  &__validity {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+
+  &__validity-title {
+    display: block;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: $grey;
+  }
+
+  &__dropdown {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__back {
+    display: flex;
+    justify-content: flex-end;
+    width: 370px;
+    height: 236px;
+    border-radius: 10px;
+    border: 1px solid $light-grey;
+    padding: 87px 15px 15px;
+    position: absolute;
+    top: 20px;
+    left: 194px;
+    z-index: 1;
+    box-sizing: border-box;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 42px;
+      background: $light-grey;
+      position: absolute;
+      top: 26px;
+      left: 0;
+    }
+  }
+
+  &__cvv2 {
+    width: 138px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid $light-grey;
+    box-sizing: border-box;
+    padding: 0 15px;
+    background: $white;
+  }
+
+  &__submit {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-credit-card {
+    &__back {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-credit-card {
+    &__front,
+    &__back {
+      box-sizing: border-box;
+      max-width: 360px;
+      width: 100%;
+    }
+
+    &__front {
+      padding: 10px;
+    }
+
+    &__card-number-inputs input:not(:last-child) {
+      margin-right: 2px;
+    }
+  }
+}

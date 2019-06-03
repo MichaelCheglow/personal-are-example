@@ -1,0 +1,39 @@
+.page-payments {
+  display: flex;
+  flex-direction: column;
+
+  &__main {
+    padding: 45px 30px;
+    flex: 1 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.16;
+    color: $page-title;
+  }
+
+  &__footer {
+    padding: 25px 30px;
+    background: $submit-hover;
+
+    p {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      line-height: 1.5;
+      color: $grey-text;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-payments {
+    &__main {
+      padding: 20px 15px;
+    }
+  }
+}

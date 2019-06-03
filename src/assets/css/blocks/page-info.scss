@@ -1,0 +1,15 @@
+.page-info {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: $submit-hover;
+
+  thead {
+    padding-bottom: 15px;
+  }
+
+  &__title {
+    color: $grey;
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+@import "./global/reset.scss";
+@import "./global/global.scss";
+// @import "./global/variables.scss";
+
+// Fonts
+@import "./global/fonts.scss";
+
+// Mixins
+@import "./global/mixins.scss";
+
+// Layouts
+@import "./layouts/layout-default.scss";
+
+// Pages
+@import "./pages/page-payment-success.scss";
+@import "./pages/page-payments.scss";
+@import "./pages/page-payment-history.scss";
+
+// Blocks
+@import "./blocks/dropdown-menu.scss";
+@import "./blocks/form-credit-card.scss";
+@import "./blocks/form-payment-info.scss";
+@import "./blocks/menu-main.scss";
+@import "./blocks/page-info.scss";
+@import "./blocks/table-payment-history.scss";

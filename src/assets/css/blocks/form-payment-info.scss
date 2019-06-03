@@ -1,0 +1,35 @@
+.form-payment-info {
+  position: relative;
+
+  &__input-wrap {
+    position: relative;
+  }
+
+  &__error {
+    color: $error;
+    margin-top: 15px;
+  }
+
+  &__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 30px;
+    border: 1px solid $submit-static;
+    padding: 0;
+    background: $white;
+    color: $submit-static;
+    font-size: 14px;
+
+    &:hover {
+      color: $submit-hover;
+      border-color: $submit-hover;
+    }
+  }
+}

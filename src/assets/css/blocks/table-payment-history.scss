@@ -1,0 +1,38 @@
+.table-payment-history {
+  text-align: center;
+
+  &__head {
+    border-bottom: 3px solid $tabe-dark;
+    background: $table-head;
+    color: $tabe-dark;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__head-colm {
+    padding: 10px 5px;
+  }
+
+  &__row {
+    border-bottom: $table-border;
+
+    &:nth-child(even) {
+      background: $table-even;
+    }
+
+    &:hover {
+      background: $light-grey;
+    }
+  }
+
+  &__cell {
+    padding: 10px 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .table-payment-history {
+    display: block;
+    overflow-x: scroll;
+  }
+}
